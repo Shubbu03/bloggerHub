@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import authService from "./appwrite/auth";
-import databaseService from "./appwrite/conf";
+// import databaseService from "./appwrite/conf";
 import { useEffect } from "react";
 import { login, logout } from "./store/authSlice";
 import { Footer, Header } from "./components";
@@ -30,7 +30,8 @@ function App() {
       <div className="w-full">
         <Header />
         <main>
-          TODO: {/* <Outlet/> */}</main>
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </div>
